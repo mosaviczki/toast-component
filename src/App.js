@@ -1,11 +1,23 @@
 import './App.css';
+import React, { useState } from 'react';
+import Toast from './Toast';
 
-function App() {
+const App = () => {
+  const [showToast, setShowToast] = useState(false);
+
+  const handleShowToast = () => {
+    setShowToast(true);
+    setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
+  };
+
   return (
-    <div className="App">
-      <h1>Componentes react</h1>
+    <div>
+      <button className='buttons' onClick={handleShowToast}>Mostrar Toast</button>
+      <Toast message="Mensagem de erro" show={showToast} duration={3000} />
     </div>
   );
-}
+};
 
 export default App;
