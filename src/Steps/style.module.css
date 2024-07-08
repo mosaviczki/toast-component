@@ -1,0 +1,14 @@
+.OneContainer{
+    background-color: brown;
+    color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+}
+.TwoContainer{
+    background-color: cadetblue;
+    color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+}

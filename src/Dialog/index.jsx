@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style.module.css";
 
 const Dialog = ({ open, onClose }) => {
+  const [step, setStep] = useState(0);
   const handleClose = () => {
     onClose();
   };

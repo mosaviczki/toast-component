@@ -1,0 +1,55 @@
+.backgroundDialog{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.219);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 100;
+}
+.containerDialog {
+    width: 100%;
+    max-width: 600px; 
+    height: 600px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: none;
+    z-index: 10;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.step-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.step {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    top: 70px;
+    transform: translateX(100%);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-active {
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+.step-exit {
+    opacity: 0;
+    transform: translateX(-100%);
+}
