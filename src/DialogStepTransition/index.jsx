@@ -7,12 +7,7 @@ import { Steppers } from "./Steppers";
 const DialogStep = ({ open, onClose }) => {
   const [step, setStep] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  /* const [steps, setSteps] = useState([
-    { content: "Step 1" },
-    { content: "Step 2" },
-    { content: "Step 3" },
-    { content: "Step 4" },
-  ]); */
+  /* const [steps, setSteps] = useState([1, 2]); */
 
   const handleClose = () => {
     onClose();
